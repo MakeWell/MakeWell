@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.3</Version>
+    <Description>המחלקות הבסיסיות והגנריות</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Information\" />
+  </ItemGroup>
 
 </Project>
