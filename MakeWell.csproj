@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Information\" />
+    <Compile Remove="Information\**" />
+    <EmbeddedResource Remove="Information\**" />
+    <None Remove="Information\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.42.0.1791" />
   </ItemGroup>
 
 </Project>
