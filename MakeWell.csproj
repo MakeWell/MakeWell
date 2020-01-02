@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.9</Version>
     <Description>המחלקות הבסיסיות והגנריות</Description>
   </PropertyGroup>
 
@@ -16,6 +16,14 @@
   <ItemGroup>
     <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
     <PackageReference Include="Google.Apis.Sheets.v4" Version="1.42.0.1791" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Globalization\" />
+    <Folder Include="Media\" />
+    <Folder Include="Naming\" />
+    <Folder Include="Text\" />
   </ItemGroup>
 
 </Project>

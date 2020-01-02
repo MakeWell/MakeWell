@@ -7,8 +7,6 @@ namespace MakeWell
 {
     public interface IPerson : IEntity
     {
-        string Name { get; set; }
-        GenderEnum? Gender { get; set; }
-        DateTime DateOfBirth { get; set; }
+        PrivateDetails PrivateDetails { get; set; }
     }
 }

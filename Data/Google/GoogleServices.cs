@@ -9,6 +9,7 @@ namespace MakeWell.Data.Google
 {
     public static class GoogleServices
     {
+        [Obsolete("Use other")]
         public static SheetsService GetSheetsService(UserCredential credential, string applicationName)
         {
             // Create the service.
