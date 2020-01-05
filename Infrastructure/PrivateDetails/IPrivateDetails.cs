@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MakeWell.Infrastructure;
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace MakeWell.People
 {
-    public interface IPrivateDetails
+    public interface IPrivateDetails : IEntity
     {
-        [Key]
-        int ID { get; set; }
         [Required]
         string FirstMidName { get; set; }
         [Required]
         string LastName { get; set; }
-        string Name { get; set; }
-        GenderEnum? Gender { get; set; }
+        string Gender { get; set; }
         DateTime DateOfBirth { get; set; }
-
-
-
     }
 }

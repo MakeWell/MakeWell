@@ -2,11 +2,10 @@
 using Google.Apis.Sheets.v4.Data;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MakeWell.Data.Google.Sheets
 {
-    public static class GoogleSheetsQuery
+    public static class GoogleSheetsResult
     {
         public static string[][] GetStrings(SheetsService service, string spreadsheetId, string range)
         {

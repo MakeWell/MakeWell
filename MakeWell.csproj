@@ -3,27 +3,59 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.9</Version>
+    <Version>1.1.2</Version>
     <Description>המחלקות הבסיסיות והגנריות</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MakeWell/MakeWell</RepositoryUrl>
+    <NeutralLanguage></NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Clinics\**" />
+    <Compile Remove="Globalization\**" />
     <Compile Remove="Information\**" />
+    <Compile Remove="Media\**" />
+    <Compile Remove="Naming\**" />
+    <Compile Remove="Text\**" />
+    <EmbeddedResource Remove="Clinics\**" />
+    <EmbeddedResource Remove="Globalization\**" />
     <EmbeddedResource Remove="Information\**" />
+    <EmbeddedResource Remove="Media\**" />
+    <EmbeddedResource Remove="Naming\**" />
+    <EmbeddedResource Remove="Text\**" />
+    <None Remove="Clinics\**" />
+    <None Remove="Globalization\**" />
     <None Remove="Information\**" />
+    <None Remove="Media\**" />
+    <None Remove="Naming\**" />
+    <None Remove="Text\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
     <PackageReference Include="Google.Apis.Sheets.v4" Version="1.42.0.1791" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Globalization\" />
-    <Folder Include="Media\" />
-    <Folder Include="Naming\" />
-    <Folder Include="Text\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Infrastructure\Db\DbDiagram.cd">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="Infrastructure\Db\DbDiagram.Debug.cd">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>DbDiagram.cd</DependentUpon>
+    </None>
+    <None Update="Infrastructure\Db\DbDiagram.OneDriveProfile.cd">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>DbDiagram.cd</DependentUpon>
+    </None>
+    <None Update="Infrastructure\Db\DbDiagram.Release.cd">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>DbDiagram.cd</DependentUpon>
+    </None>
   </ItemGroup>
 
 </Project>
