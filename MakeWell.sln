@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ednm", "..\Ednm\Ednm.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neveram", "..\Neveram\Neveram\Neveram.csproj", "{EA7974C2-3B47-418C-ACD1-2C191AB61C2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "..\BlazorApp1\BlazorApp1.csproj", "{2266AD8B-1BDA-492B-98E4-0A36E4793210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "..\BlazorApp1\BlazorApp1.csproj", "{2266AD8B-1BDA-492B-98E4-0A36E4793210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
