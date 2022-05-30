@@ -1,0 +1,24 @@
+.shoulder-view {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoulder-title {
+  display: flex;
+  color: white;
+  background-color: forestgreen ;
+  border: 1px solid red;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.shoulder-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoulder-router-outlet {
+
+}
