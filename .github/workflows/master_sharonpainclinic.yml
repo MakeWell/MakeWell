@@ -15,7 +15,7 @@ env:
   NODE_VERSION: '16.x'
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -25,9 +25,10 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: Install dependencies
-      run: npm install
-    - name: Build
-      run: npm run build -- --prod
+      run: |
+        npm install -g @angular/cli
+        npm install
+        ng build --prod
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -48,4 +49,4 @@ jobs:
           app-name: 'SharonPainClinic'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0862B5A57B3F4FA691E10D69632995CC }}
-          package: .
+          package: ./dist/physical-examination
