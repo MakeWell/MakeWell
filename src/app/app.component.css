@@ -1,8 +1,4 @@
-.application-view {
-  border: 1px solid white;
-  min-width: 538px;
-}
 .router-outlet-view {
-  background-image: url("../assets/cover.png");
-  min-height: 90vh;
+  background-color: lavenderblush;
+  height: 100vh;
 }
