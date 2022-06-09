@@ -16,17 +16,11 @@ import { AppMatModule } from './modules/app-mat.module';
 // root
 import { AppComponent } from './app.component';
 // application
-import { ApplicationTitleComponent } from './components/application-title/application-title.component';
-import { ApplicationNavigationComponent } from './components/application-navigation/application-navigation.component';
-import { PhysicalExaminationItemComponent } from './components/physical-examination-item/physical-examination-item.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RequestFormComponent } from './pages/home-page/contents/request-form/request-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ApplicationTitleComponent,
-    ApplicationNavigationComponent,
-    PhysicalExaminationItemComponent,
     HomePageComponent,
     RequestFormComponent,
    ],
