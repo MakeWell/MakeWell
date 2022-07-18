@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="contact-form">
   <mat-card-header class="justify-content-center mb-5">
     <mat-card-title class="primary-color-text header">צרו קשר!</mat-card-title>
   </mat-card-header>
@@ -8,31 +8,33 @@
       <input
         class="text-start"
         matInput
-        placeholder="pat@example.com"
+        placeholder="john@example.com"
         required
       />
     </mat-form-field>
     <mat-form-field class="text-end w-75" appearance="fill">
       <mat-label>הכנס את השם שלך:</mat-label>
       <input
-        class="text-start"
+        class="text-end"
         matInput
-        placeholder="pat@example.com"
+        placeholder="אבירם שרון"
         required
       />
     </mat-form-field>
     <mat-form-field class="text-end w-75" appearance="fill">
       <mat-label>הכנס את ההודעה שלך:</mat-label>
-      <input
-        class="text-start"
+      <textarea
+        cdkTextareaAutosize="true"
+        cdkAutosizeMinRows="2"
+        cdkAutosizeMaxRows="10"
+        class="text-end"
         matInput
-        placeholder="pat@example.com"
+        placeholder="הודעה מפורטת של דברים שתרצו להגיד לנו"
         required
-      />
+      ></textarea>
     </mat-form-field>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button mat-raised-button color="primary" class="w-25 mx-4">שלח!</button>
   </mat-card-actions>
 </mat-card>
