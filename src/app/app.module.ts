@@ -18,11 +18,13 @@ import { AppComponent } from './app.component';
 // application
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RequestFormComponent } from './pages/home-page/contents/request-form/request-form.component';
+import { AboutUsComponent } from './pages/home-page/contents/about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RequestFormComponent,
+    AboutUsComponent,
    ],
   imports: [
     BrowserModule,
