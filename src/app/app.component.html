@@ -1,8 +1,22 @@
 <div class="application-view">
-  <div class="navigation-view">
-    <application-navigation NavViewName="material"></application-navigation>
+  <div dir="rtl">
+    <img class="force-center" src="../assets/sharonimage.webp" />
   </div>
-  <div class="router-outlet-view">
+  <div class="splitter mt-3 d-flex align-start justify-content-center">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <polygon
+        transform="scale(1, -1) translate(0, -100)"
+        points="100 0, 0 200, 200 200"
+      ></polygon>
+    </svg>
+  </div>
+  <main class="router-outlet-view">
     <router-outlet></router-outlet>
-  </div>
+  </main>
+  <footer class="py-3">
+    <p class="fs-3 text-center">מרפאת כאב ד"ר שרון</p>
+    <p class="text-center">054-4344979</p>
+    <p class="fs-3 text-center">שעות עבודה</p>
+    <p class="text-center">שני עד שישי משבע בבוקר עד שבע בערב</p>
+  </footer>
 </div>
