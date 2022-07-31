@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100vw;
   max-width: 100vw;
@@ -9,4 +10,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 1em;
   background-color: lavenderblush;
+}
+
+.force-center {
+  margin-right: 50vw !important;
+  transform: translateX(50%) !important;
 }

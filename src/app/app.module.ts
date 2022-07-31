@@ -21,12 +21,14 @@ import { RequestFormComponent } from './pages/home-page/contents/request-form/re
 import { AboutUsComponent } from './pages/home-page/contents/about-us/about-us.component';
 import { AboutClinicComponent } from './pages/home-page/contents/about-clinic/about-clinic.component';
 import { ArticlesComponent } from './pages/home-page/contents/articles/articles.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RequestFormComponent,
     AboutUsComponent,
+    PageNotFoundComponent,
     AboutClinicComponent,
     ArticlesComponent,
    ],
