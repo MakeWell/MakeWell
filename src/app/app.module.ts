@@ -19,12 +19,16 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RequestFormComponent } from './pages/home-page/contents/request-form/request-form.component';
 import { AboutUsComponent } from './pages/home-page/contents/about-us/about-us.component';
+import { AboutClinicComponent } from './pages/home-page/contents/about-clinic/about-clinic.component';
+import { ArticlesComponent } from './pages/home-page/contents/articles/articles.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RequestFormComponent,
     AboutUsComponent,
+    AboutClinicComponent,
+    ArticlesComponent,
    ],
   imports: [
     BrowserModule,
